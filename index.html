@@ -582,11 +582,18 @@
 
       <section class="section--signInForm">
         <div class="container">
-          <form class="form form-signin" netlify action="" method="post">
+          <form
+            id="form-signin"
+            class="form form-signin"
+            netlify
+            netlify-honeypot="bot-field"
+            action=""
+            method="post"
+          >
             <img class="logo" alt="Omnifood logo" src="img/omnifood-logo.png" />
             <h2 class="secondary-heading">Create an account</h2>
             <p class="supporting-text">Get your first meal for free!</p>
-
+            <input hidden name="bot-field" />
             <input
               type="text"
               name="name"
@@ -653,7 +660,14 @@
                 first meal is on us!
               </p>
 
-              <form class="cta-form sign-up" name="sign-up" netlify>
+              <form
+                id="sign-up"
+                class="cta-form sign-up"
+                netlify-honeypot="bot-field"
+                name="sign-up"
+                netlify
+              >
+                <input hidden name="bot-field" />
                 <div>
                   <label for="full-name">Full Name</label>
                   <input
@@ -751,8 +765,10 @@
         <nav class="nav-col">
           <p class="footer-heading">Account</p>
           <ul class="footer-nav">
-            <li><a class="footer-link" href="#">Create account</a></li>
-            <li><a class="footer-link" href="#">Sign in</a></li>
+            <li>
+              <a class="footer-link" href="#form-signin">Create account</a>
+            </li>
+            <li><a class="footer-link" href="#form-signin">Sign in</a></li>
             <li><a class="footer-link" href="#">iOS app</a></li>
             <li><a class="footer-link" href="#">Android app</a></li>
           </ul>

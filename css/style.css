@@ -562,6 +562,10 @@
   margin-bottom: 2.4rem;
 }
 
+.section--signInForm input[name="bot-field"] {
+  display: none;
+}
+
 .section--signInForm input::placeholder {
   color: #222;
 }

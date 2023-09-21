@@ -100,8 +100,13 @@ const signin_handleSubmit = (event) => {
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: new URLSearchParams(formData).toString(),
   })
-    .then(() => alert("Thank you for your submission   11111"))
+    .then(() => alert("Registration done succesfully"))
     .catch((error) => alert(error));
+
+  document
+    .querySelector(".form-signin")
+    .querySelectorAll("input")
+    .forEach((el) => (el.value = ""));
 };
 
 document
@@ -119,8 +124,13 @@ const handleSubmit = (event) => {
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: new URLSearchParams(formData).toString(),
   })
-    .then(() => alert("Thank you for your submission  222"))
+    .then(() => alert("Registration done succesfully"))
     .catch((error) => alert(error));
+
+  document
+    .querySelector(".sign-up")
+    .querySelectorAll("input")
+    .forEach((el) => (el.value = ""));
 };
 
 document.querySelector(".sign-up").addEventListener("submit", handleSubmit);
