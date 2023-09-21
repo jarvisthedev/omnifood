@@ -201,6 +201,82 @@
         </div>
       </section>
 
+      <section class="section--signInForm">
+        <div class="container">
+          <form
+            id="form-signin"
+            class="form form-signin"
+            netlify
+            netlify-honeypot="bot-field"
+            action=""
+            method="post"
+          >
+            <h2 class="secondary-heading">Create an account</h2>
+            <p class="supporting-text">Get your first meal for free!</p>
+            <input hidden name="bot-field" />
+            <input
+              type="text"
+              name="name"
+              placeholder="Name"
+              class="input"
+              required
+            />
+
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              class="input"
+              required
+            />
+
+            <input
+              type="password"
+              name="password"
+              placeholder="Password"
+              class="input"
+              required
+            />
+
+            <button class="sighup button">Create account</button>
+            <a
+              href="https://accounts.google.com/v3/signin/identifier?ifkv=AYZoVheLHtgBku3IWNPfXY0QCS5IihrRoqKYP1nSJBErRth_zhvu-DNmTcSr9tOT6Wcj_lfiX-9F9A&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S251808249%3A1695308259447230&theme=glif"
+              class="google button"
+            >
+              <img
+                class="svg"
+                src="./img/login-imgs/google.svg"
+                alt="google logo"
+              />
+              <p class="form-text">Sign up with Google</p>
+            </a>
+            <a
+              href="https://twitter.com/i/flow/login"
+              target="_blank"
+              class="twitter button"
+            >
+              <img
+                class="svg"
+                src="./img/login-imgs/twitter.svg"
+                alt="twitter logo"
+              />
+              <p class="form-text">Sign up with Twitter</p>
+            </a>
+
+            <p class="logIn-text">
+              Already have an account?
+              <a class="account" href="#">Log in</a>
+            </p>
+          </form>
+
+          <div
+            class="bg-pic-support"
+            role="img"
+            aria-label="beutiful chair in a sitting rool with a green flower next to it"
+          ></div>
+        </div>
+      </section>
+
       <section class="section-meals" id="meals">
         <div class="container center-text">
           <span class="subheading">Meals</span>
@@ -466,75 +542,6 @@
             arranged food"
             />
           </figure>
-        </div>
-      </section>
-
-      <section class="section--signInForm">
-        <div class="container">
-          <form
-            id="form-signin"
-            class="form form-signin"
-            netlify
-            netlify-honeypot="bot-field"
-            action=""
-            method="post"
-          >
-            <img class="logo" alt="Omnifood logo" src="img/omnifood-logo.png" />
-            <h2 class="secondary-heading">Create an account</h2>
-            <p class="supporting-text">Get your first meal for free!</p>
-            <input hidden name="bot-field" />
-            <input
-              type="text"
-              name="name"
-              placeholder="Name"
-              class="input"
-              required
-            />
-
-            <input
-              type="email"
-              name="email"
-              placeholder="Email"
-              class="input"
-              required
-            />
-
-            <input
-              type="password"
-              name="password"
-              placeholder="Password"
-              class="input"
-              required
-            />
-
-            <button class="sighup button">Create account</button>
-            <div class="google button">
-              <img
-                class="svg"
-                src="./img/login-imgs/google.svg"
-                alt="google logo"
-              />
-              <p class="form-text">Sign up with Google</p>
-            </div>
-            <div class="twitter button">
-              <img
-                class="svg"
-                src="./img/login-imgs/twitter.svg"
-                alt="twitter logo"
-              />
-              <p class="form-text">Sign up with Twitter</p>
-            </div>
-
-            <p class="logIn-text">
-              Already have an account? <a class="account" href="#">Log in</a>
-            </p>
-          </form>
-
-          <div
-            class="bg-pic-support"
-            role="img"
-            aria-label="beutiful chair in a sitting rool with a green flower next to it"
-          ></div>
         </div>
       </section>
 
