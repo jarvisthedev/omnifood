@@ -1,3 +1,5 @@
+const signupform = document.querySelector(".form-signin");
+const signin = document.querySelector(".sign-up");
 ///////////////////////////////////////////////////////////
 // Set current year
 const yearEl = document.querySelector(".year");
@@ -103,34 +105,9 @@ const signin_handleSubmit = (event) => {
     .then(() => alert("Registration done succesfully"))
     .catch((error) => alert(error));
 
-  document
-    .querySelector(".form-signin")
-    .querySelectorAll("input")
-    .forEach((el) => (el.value = ""));
+  signupform.forEach((el) => (el.value = ""));
+  signin.forEach((el) => (el.value = ""));
 };
 
-document
-  .querySelector(".form-signin")
-  .addEventListener("submit", signin_handleSubmit);
-
-const handleSubmit = (event) => {
-  event.preventDefault();
-
-  const myForm = event.target;
-  const formData = new FormData(myForm);
-
-  fetch("/", {
-    method: "POST",
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: new URLSearchParams(formData).toString(),
-  })
-    .then(() => alert("Registration done succesfully"))
-    .catch((error) => alert(error));
-
-  document
-    .querySelector(".sign-up")
-    .querySelectorAll("input")
-    .forEach((el) => (el.value = ""));
-};
-
-document.querySelector(".sign-up").addEventListener("submit", handleSubmit);
+signupform.addEventListener("submit", signin_handleSubmit);
+signin.addEventListener("submit", signin_handleSubmit);
