@@ -116,6 +116,21 @@
     margin-top: 1.2rem;
   }
 
+  /* SIGHIN PAGE */
+  .section--signInForm .secondary-heading {
+    font-size: 1.8rem;
+  }
+
+  .section--signInForm .form button {
+    font-size: 1.2rem;
+    padding: 0.8rem 0.4rem;
+  }
+  /* 
+  .section--signInForm .bg-pic-support .secondary-heading {
+    font-size: 2.2rem;
+    padding: 0 9.8rem;
+  } */
+
   /* MOBILE NAVIGATION */
   .btn-mobile-nav {
     display: block;
@@ -206,12 +221,40 @@
     grid-column: span 2;
     margin-bottom: 3.2rem;
   }
+
+  /* SIGNIN PAGE */
+  .section--signInForm .container {
+    grid-template-columns: 1fr;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 3.2rem;
+    border-top-right-radius: 3.2rem;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .section--signInForm .bg-pic-support {
+    padding-bottom: 60rem;
+    grid-row: 1/2;
+    border-bottom-right-radius: 0;
+  }
+
+  .section--signInForm .secondary-heading {
+    font-size: 2.4rem;
+  }
+
+  .section--signInForm .supporting-text {
+    font-size: 1.2rem;
+    text-align: left;
+  }
+
+  .section--signInForm .form button {
+    font-size: 1.8rem;
+  }
 }
 
 /**************************/
 /* BELOW 544px (Phones) */
 /**************************/
-
 @media (max-width: 34em) {
   .grid {
     row-gap: 4.8rem;
@@ -277,6 +320,15 @@
   .cta-img-box {
     height: 32rem;
     grid-row: 1;
+  }
+
+  /* SIGNIN PAGE */
+  .section--signInForm .bg-pic-support {
+    padding-bottom: 50vh;
+  }
+
+  .section--signInForm .form button {
+    font-size: 1.2rem;
   }
 }
 
