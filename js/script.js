@@ -87,3 +87,40 @@ function checkFlexGap() {
   if (!isSupported) document.body.classList.add("no-flexbox-gap");
 }
 checkFlexGap();
+
+// HANDINGLING FORMS IN NETLIFY
+const signin_handleSubmit = (event) => {
+  event.preventDefault();
+
+  const myForm = event.target;
+  const formData = new FormData(myForm);
+
+  fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData).toString(),
+  })
+    .then(() => alert("Thank you for your submission   11111"))
+    .catch((error) => alert(error));
+};
+
+document
+  .querySelector(".form-signin")
+  .addEventListener("submit", signin_handleSubmit);
+
+const handleSubmit = (event) => {
+  event.preventDefault();
+
+  const myForm = event.target;
+  const formData = new FormData(myForm);
+
+  fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData).toString(),
+  })
+    .then(() => alert("Thank you for your submission  222"))
+    .catch((error) => alert(error));
+};
+
+document.querySelector(".sign-up").addEventListener("submit", handleSubmit);
