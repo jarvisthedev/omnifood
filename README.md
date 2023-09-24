@@ -2,9 +2,8 @@
 
 Omnifood is an AI-powered food subscription that will make you eat healthy again, 365 days per year. It's tailored to your personal tastes and nutritional needs.
 
-The project was made using HTML5 CSS3 and Vanilla JS
+The project was made using HTML5, CSS3 and Vanilla JS
 
-I used this project for learning purposes and as a skill up project for my fronend end skills
 
 ## Download
 You could have a copy of the project locally in your computer
