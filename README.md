@@ -16,12 +16,12 @@ You could have a copy of the project locally in your computer
 ### Process
 1. Create an empty folder in your computer
 2. Move the folder where you need the project stored
-1. Open terminal then cd project_name
-2. Run "git clone git@github.com:dotjarvis/omnifood.git" under "project_name"
+1. Open terminal then `cd project_name`
+2. Run `git clone git@github.com:dotjarvis/omnifood.git` under `project_name`
 3. Open VS code app
-4. Navigate to the 'project_name' you created
+4. Navigate to the `project_name`
 5. Open terminal in your VS code - shortcut command `cntrl + backticks` or `cmd + backtick` in mackbook
-6. In the terminal run "live-server" command...  You could use auto completion
+6. In the terminal run `live-server` command
 
 
 
