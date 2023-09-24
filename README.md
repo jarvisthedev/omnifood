@@ -20,11 +20,13 @@ You could have a copy of the project locally in your computer
 2. Run "git clone git@github.com:dotjarvis/omnifood.git" under "project_name"
 3. Open VS code app
 4. Navigate to the 'project_name' you created
-5. Pen terminal in your VS code - shortcut command "cntrl + `" of "cmd + `" in mackbook
-6. In te terminal run "live-server" command...  ou could use auto completion
+5. Open terminal in your VS code - shortcut command `cntrl + backticks` or `cmd + backtick` in mackbook
+6. In the terminal run "live-server" command...  You could use auto completion
 
 
 
+
+   #### Congratulation!!!
    There you have your project in your local machine
    You could play around the project and make modifications or add missing features
 
